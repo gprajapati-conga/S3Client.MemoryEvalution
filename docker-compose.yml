@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aws.nuget.memoryvalidation:
+    image: ${DOCKER_REGISTRY-}awsnugetmemoryvalidation
+    build:
+      context: .
+      dockerfile: AWS.Nuget.MemoryValidation/Dockerfile

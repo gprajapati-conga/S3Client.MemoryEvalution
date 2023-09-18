@@ -32,7 +32,7 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/aws/swagger/index.html",
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": false
     }
   }
 }
