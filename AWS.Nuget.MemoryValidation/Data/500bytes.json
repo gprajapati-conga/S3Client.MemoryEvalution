@@ -1,0 +1,17 @@
+{
+	"Id": "01a99ce9-e8b9-4fc0-a663-877112c76f9b",
+	"Name": "01a99ce9-e8b9-4fc0-a663-877112c76f9b",
+	"RecordId": "01a99ce9-e8b9-4fc0-a663-877112c76f9b",
+	"ObjectType": "Agreement",
+	"ActionType": "CREATE",
+	"PublishStatus": "New",
+	"CreatedBy": {
+		"Id": "1336c182-011e-8c82-8f1d-84b27d0c6c77",
+		"Name": "adminFirst adminlast"
+	},
+	"ModifiedBy": {
+		"Id": "1336c182-011e-8c82-8f1d-84b27d0c6c77",
+		"Name": "adminFirst adminlast"
+	},
+	"RowVersion": "e11334ec-b24b-47ab-b642-3543f3e4d753"
+}

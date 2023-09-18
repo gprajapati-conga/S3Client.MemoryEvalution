@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  s3nuget-memorytest-api:
+    ports:
+      - '8090:80'
+      - '8091:443'
+    container_name: s3nuget-memorytest
+    image: s3nuget.memorytest:v1
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+        reservations:
+          memory: 1000M
