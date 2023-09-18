@@ -27,6 +27,8 @@ namespace AWS.Nuget.MemoryValidation.Controllers
         [HttpGet("putobject")]
         public async Task<IActionResult> PutObjectAsync(int numberOfRequests)
         {
+            _logger.LogInformation($"putobject request started: {numberOfRequests}");
+
             Stream fileStream = new FileStream(Constants.InputFileName, FileMode.Open);
             byte[] byteArray = new byte[fileStream.Length];
             _ = fileStream.Read(byteArray, 0, byteArray.Length);
@@ -42,8 +44,10 @@ namespace AWS.Nuget.MemoryValidation.Controllers
                 }));
             }
             await Task.WhenAll(tasks);
-            
-            return Ok($"Completed {numberOfRequests} S3Client.PutObjectAsync requests");
+
+            _logger.LogInformation($"putobject request completed.");
+
+            return Ok($"Completed S3Client.PutObjectAsync requests: {numberOfRequests}");
         }
     }
 }

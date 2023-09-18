@@ -51,7 +51,7 @@ namespace AWS.Nuget.MemoryValidation
                 c.RouteTemplate = "api/aws/swagger/{documentName}/swagger.json";
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
                 {
-                    swaggerDoc.Servers = new List<OpenApiServer> { new OpenApiServer { Url = $"https://{httpReq.Host.Value}" } };
+                    swaggerDoc.Servers = new List<OpenApiServer> { new OpenApiServer { Url = $"http://{httpReq.Host.Value}" } };
                 });
             });
             app.UseSwaggerUI(c =>
