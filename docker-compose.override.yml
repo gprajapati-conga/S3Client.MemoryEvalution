@@ -16,3 +16,4 @@ services:
           memory: 100M
         reservations:
           memory: 100M
+    memswap_limit: 100M
