@@ -4,7 +4,7 @@ Following are steps to run the application. Please note that docker is prerequsi
 2. In Constant.cs file, Update BucketName with proper value and make sure that named bucket is created and update ServiceURL based on the bucket location. Also, assign proper values for AccessKey and SecretKey using which we can access this bucket to create some records.
 3. Now go to repository root folder and Run the application using "docker-compose up --build" command.
 4. Open the application swagger page in some browser - http://localhost:5090/api/aws/swagger/index.html
-5. Run S3Client controller GET - 'pubobject' API with 2000 number of parallel requests. This API runs 2000 parallel requests to s3client to create objects.
+5. Run S3Client controller GET - 'pubobject' API with 2000 number of parallel requests. This API runs 2000 parallel requests to s3client to create 2000 objects.
 
 ## Total size of objects
 
