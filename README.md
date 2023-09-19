@@ -17,5 +17,5 @@ To upload 1MB of data , when we run application it takes more than 100MB memory,
 ## Questions:
 
 1. Why more than 100MB application memory required to upload data having size of 1MB?
-2. How to reduce pressure on the memory without losing the performance?
+2. How to reduce pressure on the memory without losing the performance that we get by parallel calls?
 
