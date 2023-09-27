@@ -15,7 +15,7 @@ As our single object size is 500 bytes, Total size of 2000 objects = 500 * 2000 
 
 ## Observation: 
 
-To upload 1MB of data , when we run application it takes more than 100MB memory, and our container with 100M memory limit exiting with 137 OOM.
+To upload 1MB of data , when we run application it takes more than 100MB memory, and as our container memory limit is 100MB, its exiting with 137 OOM.
 
 ## Questions:
 
